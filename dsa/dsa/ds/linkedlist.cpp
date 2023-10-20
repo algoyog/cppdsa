@@ -9,6 +9,10 @@
 #include <iostream>
 using namespace std;
 
-void print(){
-    cout<<"From ll";
+Node ::  Node(Node* prev, Node* next, int val){
+    cout<< "Node Constructor\n";
+}
+
+void Node :: print(){
+    cout<< "Printing from Node instance\n";
 }

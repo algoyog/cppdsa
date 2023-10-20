@@ -16,8 +16,9 @@
 int main(int argc, const char * argv[]) {
     // insert code here...
     std::cout << "Hello, World!\n";
+    Node n1(NULL,NULL,1);
+    n1.print();
     
-    print();
     return 0;
 }
 
