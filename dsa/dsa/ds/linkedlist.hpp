@@ -12,12 +12,12 @@
 //TODO node class need to take any val datatype.
 class Node{
     private :
-    Node* prev;
-    Node* next;
-    int val;
+        Node* prev;
+        Node* next;
+        int val;
     public :
-    Node(Node* prev, Node* next, int val);
-    void print();
+        Node(Node* prev, Node* next, int val);
+        void print();
 };
 
 #endif /* linkedlist_hpp */
