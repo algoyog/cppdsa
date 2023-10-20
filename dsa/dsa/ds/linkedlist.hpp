@@ -9,7 +9,7 @@
 
 #include <stdio.h>
 
-//TODO node class need to take any val datatype.
+//TODO: Needs upgrade to generics
 class Node{
     private :
         Node* prev;
@@ -17,6 +17,17 @@ class Node{
         int val;
     public :
         Node(Node* prev, Node* next, int val);
+        void print();
+};
+
+class SinglyLinkedList{
+    private :
+        Node* start;
+    public :
+        Node* insert(Node* input);
+        bool deleteNode(int nodeNo);
+        Node* searchForVal(int val); //TODO: Needs upgrade to generics
+        //TODO: Define an iterator with fn to return the iterator
         void print();
 };
 
