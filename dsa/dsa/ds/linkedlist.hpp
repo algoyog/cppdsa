@@ -11,11 +11,10 @@
 
 //TODO: Needs upgrade to generics
 class Node{
-    private :
+    public :
         Node* prev;
         Node* next;
         int val;
-    public :
         Node(Node* prev, Node* next, int val);
         void print();
 };
