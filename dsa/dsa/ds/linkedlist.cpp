@@ -9,10 +9,22 @@
 #include <iostream>
 using namespace std;
 
+
+/*
+ Definition of a Node.
+ */
 Node ::  Node(Node* prev, Node* next, int val){
     cout<< "Node Constructor\n";
 }
 
 void Node :: print(){
     cout<< "Printing from Node instance\n";
+}
+
+/*
+ Definitions for Singly Linked List
+ */
+
+SinglyLinkedList :: SinglyLinkedList(Node* first){
+    start = first;
 }

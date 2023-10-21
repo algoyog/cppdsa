@@ -24,6 +24,7 @@ class SinglyLinkedList{
     private :
         Node* start;
     public :
+        SinglyLinkedList(Node* first);
         Node* insert(Node* input);
         bool deleteNode(int nodeNo);
         Node* searchForVal(int val); //TODO: Needs upgrade to generics
