@@ -49,3 +49,12 @@ Node* SinglyLinkedList :: insert(Node* input){
     last->next = input;
     return input;
 }
+
+void SinglyLinkedList::print(){
+    Node** head_ref = &start;
+    Node* last = *head_ref;
+    while (last!=nullptr) {
+        cout<<last->val<<"  ";
+        last = last -> next;
+    }
+}

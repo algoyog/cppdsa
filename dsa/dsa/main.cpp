@@ -20,10 +20,11 @@ int main(int argc, const char * argv[]) {
 
     Node n1(1);
     SinglyLinkedList s1(&n1);
-    Node n2(2);
+    Node n2(42);
     s1.insert(&n2);
     Node n3(3);
     s1.insert(&n3);
+    s1.print();
 
     return 0;
 }
