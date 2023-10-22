@@ -76,6 +76,10 @@ bool SinglyLinkedList :: deleteNode(int nodeNo){
                 break;
             }else{
                 i++;
+                if(curr == nullptr){
+                    cout<<"Incorrect input";
+                    break;
+                }
                 curr = curr -> next;
                 
             }

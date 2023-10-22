@@ -29,6 +29,6 @@ void testlinkedlist(){
     s1.insert(&n7);
     s1.print();
     cout<<"Deleteing...";
-    s1.deleteNode(5);
+    s1.deleteNode(51);
     s1.print();
 }
