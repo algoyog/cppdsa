@@ -13,9 +13,9 @@ using namespace std;
 /*
  Definition of a Node.
  */
-Node ::  Node(Node* inprev, Node* innext, int inval){
-    next = innext;
-    prev = inprev;
+Node ::  Node(int inval){
+    next = nullptr;
+    prev = nullptr;
     val = inval;
     cout<< "Node Constructor\n";
 }
@@ -41,10 +41,11 @@ SinglyLinkedList :: SinglyLinkedList(Node* first){
 };
  */
 Node* SinglyLinkedList :: insert(Node* input){
-    Node* curr = start;
-    while((*curr).next!=NULL){
-        *curr = *(curr)->next;
-    }
-    (*curr).next = input;
+    Node** head_ref = &start;
+    Node* last = *head_ref;
+    while (last->next != NULL) {
+            last = last->next;
+        }
+    last->next = input;
     return input;
 }

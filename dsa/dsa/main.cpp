@@ -12,14 +12,19 @@
  */
 #include <iostream>
 #include "ds/linkedlist.hpp"
+using namespace std;
 
 int main(int argc, const char * argv[]) {
     // insert code here...
     std::cout << "Hello, World!\n";
-    Node n1(nullptr,nullptr,1);
+
+    Node n1(1);
     SinglyLinkedList s1(&n1);
-    Node n2(nullptr,nullptr,2);
+    Node n2(2);
     s1.insert(&n2);
+    Node n3(3);
+    s1.insert(&n3);
+
     return 0;
 }
 

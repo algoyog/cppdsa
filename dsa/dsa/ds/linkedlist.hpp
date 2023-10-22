@@ -15,13 +15,13 @@ class Node{
         Node* prev;
         Node* next;
         int val;
-        Node(Node* prev, Node* next, int val);
+        Node( int val);
         void print();
 };
 
 class SinglyLinkedList{
     private :
-        Node* start;
+         Node* start;
     public :
         SinglyLinkedList(Node* first);
         Node* insert(Node* input);
